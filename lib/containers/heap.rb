@@ -242,6 +242,17 @@ class Containers::Heap
   alias_method :next!, :pop
   
   # call-seq:
+  #     top -> value
+  #     top -> nil
+  #
+  # Returns the value of the next item in heap order without removing it from the heap.
+  #
+  
+  def top
+    @next
+  end
+  
+  # call-seq:
   #     change_key(key, new_key) -> [new_key, value]
   #     change_key(key, new_key) -> nil
   #
